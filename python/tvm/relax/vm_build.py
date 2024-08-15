@@ -303,6 +303,7 @@ def build(
 
     .. code-block:: python
 
+        @tvm.script.ir_module
         class InputModule:
             @R.function
             def foo(x: Tensor((3, 4), "float32"), y: Tensor((3, 4), "float32")):
